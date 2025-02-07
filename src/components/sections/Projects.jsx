@@ -62,7 +62,8 @@ export const Projects = () => {
           <div className="flex flex-wrap justify-center gap-6">
             {skills.map((skill, index) => (
               <div key={index} className="text-center">
-                {console.log(skill.image)}
+                {/* {console.log(skill.image)} */}
+                
                 <img src={publicUrl + skill.image} alt={skill.name} className="w-16 h-16 mx-auto mb-2" />
                 <p className="text-gray-400">{skill.name}</p>
               </div>
