@@ -1,38 +1,66 @@
 {
+  "education": [
 
-"skills":[
+    {
+      "school": "Bengal College Of Engineering & Technology",
+      "Degree": "B.Tech in Computer Science and Engineering",
+      "session": "2022-2026"
+    },
+    {
+      "School": "Suri Govt IIT College",
+      "Degree": "Vocational Course",
+      "session": "2019-2021"
+    },
+    {
+      "School": "Bolpur NNB High School",
+      "Degree": "High School",
+      "session": "2017-2019"
+    }
+  ],
 
-  {
+  "skills": [
+    {
       "name": "HTML",
-      "image": "/assets/skills/c.png"
+      "image": "/assets/skills/html.png"
     },
     {
       "name": "CSS",
-      "image": "/assests/skills/css.png"
+      "image": "/assets/skills/css.png"
     },
     {
       "name": "Javascript",
-      "image": "/assests/skills/javascript.png"
+      "image": "/assets/skills/javascript.png"
     },
     {
       "name": "React.js",
-      "image": "/assests/skills/react.png"
+      "image": "/assets/skills/react.png"
     },
-   {
+    {
       "name": "Node.js",
-      "image": "/assests/skills/nodejs.png"
+      "image": "/assets/skills/nodejs.png"
     },
     {
       "name": "Express.js",
-      "image": "/assests/skills/express.png"
+      "image": "/assets/skills/express.png"
     },
-  {
+    {
       "name": "MongoDB",
-      "image": "/assests/skills/mongodb.png"
+      "image": "/assets/skills/mongodb.png"
+    },
+    {
+      "name": "Python",
+      "image": "/assets/skills/python.png"
+    },
+    {
+      "name": "Pandas",
+      "image": "/assets/skills/pandas.png"
+    },
+    {
+      "name": "Tailwind CSS",
+      "image": "/assets/skills/tailwindcss.png"
     }
+  ],
 
-],
-  
   "projects": [
     {
       "title": "Cloud Platform",
@@ -44,18 +72,6 @@
       "title": "AI Analytics Dashboard",
       "description": "ML-powered data visualization platform with predictive analytics and interactive reports.",
       "technologies": ["Python", "TensorFlow", "D3.js", "Flask"],
-      "link": "#"
-    },
-    {
-      "title": "E-Commerce Web App",
-      "description": "Full-stack e-commerce with modern UI, secure payment integration, and customizable product inventory.",
-      "technologies": ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
-      "link": "#"
-    },
-    {
-      "title": "Real-Time Chat App",
-      "description": "Scalable chat platform supporting real-time messaging, presence, and group chat features.",
-      "technologies": ["Socket.IO", "Express", "React", "Redis"],
       "link": "#"
     },
     {

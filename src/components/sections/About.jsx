@@ -1,16 +1,26 @@
 import { RevealOnScroll } from "../RevealOnScroll";
-import nodejs from "../../assets/skills/nodejs.png";
+import userDetails from "../userDetails.json";
+import { useEffect, useState } from "react";
 
 export const About = () => {
+
+  const[ education , setEducation ] = useState([]);
+
+  useEffect(() => {
+    setEducation(userDetails.education)
+
+  }, [])
+
+console.log(education)
+
   const frontendSkills = [
     "React",
-    "Vue",
     "TypeScript",
     "TailwindCSS",
-    "Svelte",
+    
   ];
 
-  const backendSkills = ["Node.js", "Python", "AWS", "MongoDB", "GraphQL"];
+  const backendSkills = ["Node.js", "Python", "MongoDB", "GraphQL"];
 
   return (
     <section
@@ -43,8 +53,8 @@ export const About = () => {
                                     hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition
                     "
                     >
-                      {/* {tech} */}
-                      <img src={nodejs} alt="Node.js" className="h-10 w-10" />
+                      {tech}
+                      {/* <img src={nodejs} alt="Node.js" className="h-10 w-10" /> */}
                     </span>
                   ))}
                 </div>
@@ -76,7 +86,7 @@ export const About = () => {
               <h3 className="text-xl font-bold mb-4"> 🏫 Education </h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>
-                  <strong> B.S. in Computer Science </strong> - XYZ University
+                  <strong> {} </strong> - XYZ University
                   (2016-2020)
                 </li>
                 <li>

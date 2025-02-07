@@ -10,7 +10,7 @@ export const Home = () => {
       <RevealOnScroll>
         <div className="text-center z-10 px-4 mt-10">
           <img
-            src={img1}
+            src={"https://avatars.githubusercontent.com/u/136512754?s=400&u=4a11eba85eba7a411add5025e63cd8dd0f47c29c&v=4"}
             alt="Arnab Mukherjee"
             className="rounded-full w-80 h-80 object-cover mx-auto"
           />
