@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
 import userDetails from "../userDetails.json";
-import c from "../../../public/assets/skills/c.png";
+// import c from "../../../public/assets/skills/c.png";
 
 
 export const Projects = () => {
@@ -15,7 +15,7 @@ export const Projects = () => {
     console.log(userDetails.skills);
   }, []);
 
-  const publicUrl = 'http://localhost:5173'
+  const publicUrl = import.meta.env.VITE_BASE_URL
 
   return (
     <section
@@ -64,7 +64,7 @@ export const Projects = () => {
             {skills.map((skill, index) => (
               <div key={index} className="text-center">
                 {console.log(skill.image)}
-                <img src={c} alt={skill.name} className="w-16 h-16 mx-auto mb-2" />
+                <img src={ publicUrl + skill.image } alt={skill.name} className="w-16 h-16 mx-auto mb-2" />
                 <p className="text-gray-400">{skill.name}</p>
               </div>
             ))}
