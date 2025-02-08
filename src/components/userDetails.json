@@ -20,6 +20,14 @@
 
   "skills": [
     {
+      "name": "C++",
+      "image": "/assets/skills/cpp.png"
+    },
+    {
+      "name": "GitHub",
+      "image": "/assets/skills/github.png"
+    },
+    {
       "name": "HTML",
       "image": "/assets/skills/html.png"
     },
