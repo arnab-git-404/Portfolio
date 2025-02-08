@@ -1,20 +1,32 @@
 {
   "education": [
-
     {
-      "school": "Bengal College Of Engineering & Technology",
-      "Degree": "B.Tech in Computer Science and Engineering",
-      "session": "2022-2026"
+      "school": "Bengal College Of Engineering and Technolog",
+      "link": "https://www.bcetdgp.ac.in/",
+      "location": "Durgapur, West Bengal",
+      "degree": "Bachelor of Technology | B.Tech",
+      "details": "Affiliated to Maulana Abul Kalam Azad University of Technology | MAKAUT",
+      "session": "2022-2026 | Pursuing",
+      "stream": "Computer Science and Engineering",
+      "cgpa": "7.5"
     },
     {
-      "School": "Suri Govt IIT College",
-      "Degree": "Vocational Course",
-      "session": "2019-2021"
+      "school": "Government Industrial Training Institute",
+      "link": "https://iti.wb.gov.in/institute/home/suri",
+      "location": "Suri , West Bengal",
+      "degree": "Vocational Course",
+      "details": "Affiliated to National Council for Vocational Training | NCVT",
+      "session": "2019-2021~22(Covid) | Completed",
+      "stream": "Machinist Trade(Grinder)"
     },
     {
-      "School": "Bolpur NNB High School",
-      "Degree": "High School",
-      "session": "2017-2019"
+      "school": "Bolpur Nichupati Nirad Barani High School",
+      "link": "https://school.banglarshiksha.gov.in/ws/website/index/19082001102",
+      "location": "Bolpur, West Bengal",
+      "degree": "Higher Secondary",
+      "details": "Affiliated to West Bengal Board of Secondary Education | WBBHSE ",
+      "session": "2017-2019 | Completed",
+      "stream": "Science"
     }
   ],
 

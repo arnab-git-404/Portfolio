@@ -19,7 +19,7 @@ export const Projects = () => {
   return (
     <section
       id="projects"
-      className="min-h-screen flex items-center justify-center py-20"
+      className="min-h-screen flex items-center justify-center py-10"
     >
       <RevealOnScroll>
         <div className="max-w-5xl mx-auto px-4">
@@ -30,7 +30,7 @@ export const Projects = () => {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
+                className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] "
               >
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                 <p className="text-gray-400 mb-4">{project.description}</p>
@@ -45,32 +45,32 @@ export const Projects = () => {
                   ))}
                 </div>
                 <div className="flex justify-between items-center">
+
                   <a
                     href={project.link}
                     className="text-blue-400 hover:text-blue-300 transition-colors my-4"
                   >
                     View Project →
                   </a>
+
+
+                  <a
+                    href={project.link}
+                    className="text-blue-400 hover:text-blue-300 transition-colors my-4 hover:underline"
+                  >
+                    Live
+                  </a>
+
                 </div>
               </div>
             ))}
           </div>
 
-          <h2 className="text-3xl font-bold mt-12 mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
-            Skills
-          </h2>
-          <div className="flex flex-wrap justify-center gap-6">
-            {skills.map((skill, index) => (
-              <div key={index} className="text-center">
-                <img
-                  src={publicUrl + skill.image}
-                  alt={skill.name}
-                  className={`w-16 h-16 mx-auto mb-2 ${skill.name === "GitHub" ? "bg-white rounded-full" : ""}`}
-                />
-                <p className="text-gray-400">{skill.name}</p>
-              </div>
-            ))}
-          </div>
+          
+          
+
+
+
         </div>
       </RevealOnScroll>
     </section>

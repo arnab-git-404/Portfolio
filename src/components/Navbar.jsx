@@ -42,6 +42,13 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               About{" "}
             </a>
 
+            <a
+              href="#skills"
+              className="relative hover:text-cyan-300 transition-colors after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-cyan-300 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+            >
+              {" "}
+              Skills
+            </a>
 
             <a
               href="#projects"
@@ -50,6 +57,17 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               {" "}
               Projects{" "}
             </a>
+
+            <a
+              href="#education"
+              className="relative hover:text-cyan-300 transition-colors after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-cyan-300 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+
+            >
+              {" "}
+              Education{" "}
+            </a>
+
+
             <a
               href="#contact"
               className="relative hover:text-cyan-300 transition-colors after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-cyan-300 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"

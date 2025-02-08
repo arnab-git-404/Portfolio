@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
 import emailjs from "emailjs-com";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -21,6 +22,7 @@ export const Contact = () => {
       )
       .then((result) => {
         alert("Message Sent!");
+
         setFormData({ name: "", email: "", message: "" });
       })
       .catch(() => alert("Oops! Something went wrong. Please try again."));
@@ -32,7 +34,7 @@ export const Contact = () => {
       className="min-h-screen flex items-center justify-center py-20"
     >
       <RevealOnScroll>
-        <div className="px-4 w-150">
+        <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
             {" "}
             Get In Touch
@@ -45,7 +47,7 @@ export const Contact = () => {
                 name="name"
                 required
                 value={formData.name}
-                className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+                className="w-3xl  bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                 placeholder="Name..."
                 onChange={(e) =>
                   setFormData({ ...formData, name: e.target.value })
@@ -60,7 +62,7 @@ export const Contact = () => {
                 name="email"
                 required
                 value={formData.email}
-                className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+                className="w-3xl bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                 placeholder="example@gmail.com"
                 onChange={(e) =>
                   setFormData({ ...formData, email: e.target.value })
@@ -75,7 +77,7 @@ export const Contact = () => {
                 required
                 rows={5}
                 value={formData.message}
-                className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+                className="w-3xl bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                 placeholder="Your Message..."
                 onChange={(e) =>
                   setFormData({ ...formData, message: e.target.value })
@@ -90,6 +92,30 @@ export const Contact = () => {
               Send Message
             </button>
           </form>
+          <div className="flex justify-center space-x-30 mt-8">
+            <a
+              href="https://www.linkedin.com/in/your-profile"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white text-3xl transition transform hover:scale-150"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://github.com/your-profile"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white text-3xl transition transform hover:scale-150"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="mailto:your-email@example.com"
+              className="text-white text-3xl transition transform hover:scale-150"
+            >
+              <FaEnvelope />
+            </a>
+          </div>
         </div>
       </RevealOnScroll>
     </section>
