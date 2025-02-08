@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
 import userDetails from "../userDetails.json";
-
+import GitHub from "../../../public/assets/skills/github.png";
 
 export const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -14,7 +14,7 @@ export const Projects = () => {
     console.log(userDetails.skills);
   }, []);
 
-  const publicUrl = import.meta.env.VITE_BASE_URL
+  const publicUrl = import.meta.env.VITE_BASE_URL;
 
   return (
     <section
@@ -55,16 +55,18 @@ export const Projects = () => {
               </div>
             ))}
           </div>
-          
+
           <h2 className="text-3xl font-bold mt-12 mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
             Skills
           </h2>
           <div className="flex flex-wrap justify-center gap-6">
             {skills.map((skill, index) => (
               <div key={index} className="text-center">
-                {/* {console.log(skill.image)} */}
-                
-                <img src={publicUrl + skill.image} alt={skill.name} className="w-16 h-16 mx-auto mb-2" />
+                <img
+                  src={publicUrl + skill.image}
+                  alt={skill.name}
+                  className={`w-16 h-16 mx-auto mb-2 ${skill.name === "GitHub" ? "bg-white rounded-full" : ""}`}
+                />
                 <p className="text-gray-400">{skill.name}</p>
               </div>
             ))}
