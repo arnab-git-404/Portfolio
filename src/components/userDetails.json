@@ -2,6 +2,7 @@
   "education": [
     {
       "school": "Bengal College Of Engineering and Technolog",
+      "image": "/assets/education/bcet.png ",
       "link": "https://www.bcetdgp.ac.in/",
       "location": "Durgapur, West Bengal",
       "degree": "Bachelor of Technology | B.Tech",
@@ -12,6 +13,7 @@
     },
     {
       "school": "Government Industrial Training Institute",
+      "image": "/assets/education/iti.png ",
       "link": "https://iti.wb.gov.in/institute/home/suri",
       "location": "Suri , West Bengal",
       "degree": "Vocational Course",
@@ -21,6 +23,8 @@
     },
     {
       "school": "Bolpur Nichupati Nirad Barani High School",
+      "image": "/assets/education/nnb.jpg ",
+
       "link": "https://school.banglarshiksha.gov.in/ws/website/index/19082001102",
       "location": "Bolpur, West Bengal",
       "degree": "Higher Secondary",

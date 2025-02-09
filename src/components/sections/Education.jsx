@@ -16,6 +16,8 @@ export const Education = () => {
 
   const backendSkills = ["Node.js", "Python", "MongoDB", "GraphQL"];
 
+  const publicUrl = import.meta.env.VITE_BASE_URL;
+
 
   return (
     <section
@@ -37,7 +39,7 @@ export const Education = () => {
                 className="flex flex-col md:flex-row p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all mb-6  hover:border-blue-900/100 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] "
               
               >
-                <img src={BCET} alt="Education" className="h-50 w-80 mx-auto md:mx-0" />
+                <img src={publicUrl + edu.image} alt="Education" className="h-50 w-80 mx-auto md:mx-0" />
                 <ul className="list-disc list-inside text-gray-300 space-y-2 mt-4 md:mt-0 md:ml-10">
                   <li>
                     <strong onClick={()=>{
