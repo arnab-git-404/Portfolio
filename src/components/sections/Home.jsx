@@ -1,5 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
-import img1 from "../../assets/DP.jpg";
+
 
 export const Home = () => {
   return (
