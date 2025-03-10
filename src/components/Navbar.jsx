@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import { useContext } from "react";
+import { FaSun, FaMoon } from "react-icons/fa";
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
@@ -8,13 +10,12 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
   return (
     <nav className="fixed top-0 w-full z-40 bg-[rgba(10, 10, 10, 0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
-      
-      
       <div className="max-w-5xl mx-auto px-4  ">
+
         <div className="flex justify-between items-center h-16">
           <a href="#home" className="font-mono text-xl font-bold text-white">
             {" "}
-            <span className="hover:text-cyan-300" >Arnab Mukherjee</span>{" "}
+            <span className="hover:text-cyan-300">Arnab Mukherjee</span>{" "}
           </a>
 
           <div
@@ -32,7 +33,6 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               {" "}
               Home
             </a>
-          
 
             <a
               href="#about"
@@ -61,21 +61,22 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
             <a
               href="#education"
               className="relative hover:text-cyan-300 transition-colors after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-cyan-300 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
-
             >
               {" "}
               Education{" "}
             </a>
 
-
             <a
               href="#contact"
               className="relative hover:text-cyan-300 transition-colors after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-cyan-300 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
-
             >
               {" "}
               Contact{" "}
             </a>
+
+
+
+
           </div>
         </div>
       </div>

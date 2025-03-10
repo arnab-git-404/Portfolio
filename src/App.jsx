@@ -14,7 +14,6 @@ import { Skills } from "./components/sections/Skills";
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-
   return (
     <>
       {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}{" "}
@@ -31,7 +30,6 @@ function App() {
         <Projects />
         <Education />
         <Contact />
-       
       </div>
     </>
   );
